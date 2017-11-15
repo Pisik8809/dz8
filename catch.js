@@ -11,13 +11,12 @@ wolf.onmousedown = function(e) {
   document.body.appendChild(wolf);
   wolf.style.zIndex = 1000;
 
-  // передвинуть мяч под координаты курсора
-  // и сдвинуть на половину ширины/высоты для центрирования
+  // передвинуть элементт под координаты курсора, сдвинуть на половину ширины/высоты для центрирования
   function moveAt(e) {
     wolf.style.left = e.pageX - wolf.offsetWidth / 2 + 'px';
   }
 
-var count = 0;
+var count = 1;
 
   function eggSave() {
     var wolfCoordX = wolf.offsetLeft - 100,
@@ -25,11 +24,10 @@ var count = 0;
         egg1CoordY = egg1.offsetTop + 396,
         egg2CoordX = egg2.offsetLeft + 912,
         egg2CoordY = egg2.offsetTop + 396;
-        ++count;
-        console.log(egg1CoordY);
     if (wolfCoordX <= egg1.offsetLeft && (wolfCoordY >= egg1CoordY && egg1CoordY >= 400)) {
         egg1.style.backgroundImage = 'url(ципа1.png)';
         score.innerHTML = count + 'egg';
+        count++;
         setTimeout(function() {
           egg1.style.visibility = 'hidden';
         }, 350);
@@ -37,6 +35,7 @@ var count = 0;
      if ((wolfCoordX <= egg2CoordX && wolfCoordX >= 785 && egg2CoordX <= 900) && (wolfCoordY >= egg2CoordY && egg2CoordY >= 400)) {
       egg2.style.backgroundImage = 'url(ципа1.png)';
       score.innerHTML = count + 'egg';
+      count++;
       setTimeout(function() {
         egg2.style.visibility = 'hidden';
       }, 350);

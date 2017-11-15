@@ -22,17 +22,17 @@ h1 {
 
 }
 
-.chicken1 {
+.chicken1, .chicken2 {
   position: relative;
-  width: 25%;
-  height: 3%;
+  width: 373.2px;
+  height: 21.5px;
   background-color: brown;
   border: 2px solid black;
 }
 
 .score {
-  width: 25%;
-  height: 6%;
+  width: 373.2px;
+  height: 30px;
   border: 2px solid black;
   text-align: center;
   line-height: normal;
@@ -40,22 +40,14 @@ h1 {
   font-size: 20px;
 }
 
-.chicken2 {
-  position: relative;
-  width: 25%;
-  height: 3%;
-  background-color: brown;
-  border: 2px solid black;
-}
-
 .mother1, .mother2 {
   position: absolute;
-  top: -950%;
+  top: -210px;
   left: 0;
 }
 
 .mother2 {
-  left: 33%;
+  left: 128px;
 }
 
 .wolf {

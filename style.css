@@ -17,9 +17,10 @@ h1 {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  height: 97.5vh;
-  width: 98vw;
-
+  height: 720px;
+  width: 1280px;
+  margin: 0 auto;
+  border: 5px solid white;
 }
 
 .chicken1, .chicken2 {
@@ -52,7 +53,7 @@ h1 {
 
 .wolf {
   position: absolute;
-  top: 57.5%;
+  top: 424px;
   left: 40%;
   width: 240px;
   height: 300px;

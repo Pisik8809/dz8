@@ -24,7 +24,8 @@ var count = 1;
         egg1CoordY = egg1.offsetTop + 396,
         egg2CoordX = egg2.offsetLeft + 912,
         egg2CoordY = egg2.offsetTop + 396;
-    if (wolfCoordX <= egg1.offsetLeft && (wolfCoordY >= egg1CoordY && egg1CoordY >= 400)) {
+        console.log(wolfCoordX);
+    if ((wolfCoordX <= 500 && egg1.offsetLeft >= 120) && (wolfCoordY >= egg1CoordY && egg1CoordY >= 400)) {
         egg1.style.backgroundImage = 'url(ципа1.png)';
         score.innerHTML = count + 'egg';
         count++;
@@ -32,7 +33,7 @@ var count = 1;
           egg1.style.visibility = 'hidden';
         }, 350);
     }
-     if ((wolfCoordX <= egg2CoordX && wolfCoordX >= 785 && egg2CoordX <= 900) && (wolfCoordY >= egg2CoordY && egg2CoordY >= 400)) {
+     if ((wolfCoordX <= egg2CoordX && wolfCoordX >= 680 && egg2CoordX <= 900) && (wolfCoordY >= egg2CoordY && egg2CoordY >= 400)) {
       egg2.style.backgroundImage = 'url(ципа1.png)';
       score.innerHTML = count + 'egg';
       count++;
